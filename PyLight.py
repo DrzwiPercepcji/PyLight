@@ -73,13 +73,13 @@ while True:
         
         rgb = [rl, gl, bl]
         
-		#Output for rivalcfg command.
+        #Output for rivalcfg command.
         '''
         output = ''.join('{:02x}'.format(c) for c in rgb)
-		os.system("rivalcfg -c " + output)
+        os.system("rivalcfg -c " + output)
         '''
 		
-		#Output for msi-rgb command.
+        #Output for msi-rgb command.
         '''
         R = format(int(round(rgb[0] / 255.0 * 15.0)), 'x')
         G = format(int(round(rgb[1] / 255.0 * 15.0)), 'x')
